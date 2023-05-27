@@ -1,0 +1,28 @@
+﻿@page
+@model FreshFoodShop.Pages.Pages_Register
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="form-box container">
+    <form id ="registerForm" class="form">
+        <span class="title">Sign up</span>
+        <span class="subtitle">Create a free account with your email.</span>
+        <div class="form-container">
+            <input type="text" id="firstname"class="input" placeholder="First Name" required>
+            <input type="text" id="lastname" class="input" placeholder="Last Name" required>
+            <input type="text" id="address"class="input" placeholder="Address" >
+            <input type="email" id="email" class="input" placeholder="Email" required>
+            <input type="text" id="phoneNo"class="input" placeholder="Phone Number" required>
+            <input type="password" id="password" class="input" placeholder="Password" required>
+        </div>
+        <button>Sign up</button>
+    </form>
+    <div class="form-section">
+        <p>Have an account? <button type="button" id="loginButton">Log in</button> </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/register.js"></script>
+}
+
